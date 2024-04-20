@@ -11,18 +11,18 @@
 		],
 		"servers": [
 			{
-				"tag": "bypass-dns",
-				"address": "tcp://95.138.193.252:32044",
-				"address_strategy": "ipv4_only",
-				"strategy": "ipv4_only",
-				"detour": "dns-bypass"
-			},
-			{
 				"tag": "proxy-dns",
 				"address": "udp://1.1.1.2",
 				"address_strategy": "ipv4_only",
 				"strategy": "ipv4_only",
 				"detour": "vmess-reality-out"
+			},
+			{
+				"tag": "bypass-dns",
+				"address": "tcp://95.138.193.252:32044",
+				"address_strategy": "ipv4_only",
+				"strategy": "ipv4_only",
+				"detour": "dns-bypass"
 			}
 		]
 	},
