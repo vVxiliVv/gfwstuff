@@ -5,7 +5,7 @@
 	"dns": {
 		"rules": [
 			{
-				"domain": ["speedtest.tvpg.hu"],
+				"domain": ["ebsz.ddns.net"],
 				"server": "bypass-dns"
 			}
 		],
