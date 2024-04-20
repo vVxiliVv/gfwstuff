@@ -3,12 +3,12 @@
 		"disabled": false
 	},
 	"dns": {
-	"servers": [
+		"servers": [
 			{
 				"address": "udp://1.1.1.1",
 				"address_strategy": "ipv4_only",
 				"strategy": "ipv4_only",
-    "detour": "vmess-reality-out"
+				"detour": "vmess-reality-out"
 			},
 			{
 				"tag": "bypass-dns",
@@ -17,7 +17,7 @@
 				"strategy": "ipv4_only",
 				"detour": "dns-bypass"
 			}
-],
+		],
 		"rules": [
 			{
 				"domain": ["ebsz.ddns.net"],
