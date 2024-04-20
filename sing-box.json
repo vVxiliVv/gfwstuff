@@ -3,17 +3,7 @@
 		"disabled": false
 	},
 	"dns": {
-		"rules": [
-			{
-				"domain": ["ebsz.ddns.net"],
-				"server": "bypass-dns"
-			},
-			{
-				"network": "tcp,udp",
-				"server": "proxy-dns"
-			}
-		],
-		"servers": [
+	"servers": [
 			{
 				"tag": "proxy-dns",
 				"address": "udp://1.1.1.2",
@@ -27,6 +17,16 @@
 				"address_strategy": "ipv4_only",
 				"strategy": "ipv4_only",
 				"detour": "dns-bypass"
+			}
+],
+		"rules": [
+			{
+				"domain": ["ebsz.ddns.net"],
+				"server": "bypass-dns"
+			},
+			{
+				"network": "tcp,udp",
+				"server": "proxy-dns"
 			}
 		]
 	},
