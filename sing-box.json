@@ -5,11 +5,10 @@
 	"dns": {
 	"servers": [
 			{
-				"tag": "proxy-dns",
-				"address": "udp://1.1.1.2",
+				"address": "udp://1.1.1.1",
 				"address_strategy": "ipv4_only",
 				"strategy": "ipv4_only",
-				"detour": "vmess-reality-out"
+    "detour": "vmess-reality-out"
 			},
 			{
 				"tag": "bypass-dns",
@@ -23,10 +22,6 @@
 			{
 				"domain": ["ebsz.ddns.net"],
 				"server": "bypass-dns"
-			},
-			{
-				"network": "tcp,udp",
-				"server": "proxy-dns"
 			}
 		]
 	},
