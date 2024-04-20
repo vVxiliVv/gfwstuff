@@ -19,7 +19,7 @@
 			},
 			{
 				"tag": "proxy-dns",
-				"address": "tcp://1.1.1.1",
+				"address": "udp://1.1.1.2",
 				"address_strategy": "ipv4_only",
 				"strategy": "ipv4_only",
 				"detour": "vmess-reality-out"
