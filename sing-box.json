@@ -9,7 +9,7 @@
 				"server": "bypass-dns"
 			},
 			{
-				"user": ["fuckfirewallsingeneral"],
+				"network": "tcp,udp",
 				"server": "proxy-dns"
 			}
 		],
@@ -57,7 +57,6 @@
 			"server": "ebsz.ddns.net",
 			"server_port": 443,
 			"uuid": "fuckfirewallsingeneral",
-			"user": "fuckfirewallsingeneral",
 			"security": "zero",
 			"alter_id": 0,
 			"global_padding": false,
