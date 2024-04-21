@@ -57,22 +57,8 @@
 			"global_padding": false,
 			"authenticated_length": true,
 			"domain_strategy": "ipv4_only",
-			"tls": {
-				"enabled": true,
-				"utls": {
-					"enabled": true,
-					"fingerprint": "firefox"
-				},
-				"server_name": "",
-				"alpn": ["h2"],
-				"reality": {
-					"enabled": true,
-					"public_key": "ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY",
-					"short_id": "b1"
-				}
-			},
 			"transport": {
-				"type": "h2"
+				"type": "httpupgrade"
 			}
 		},
 		{
