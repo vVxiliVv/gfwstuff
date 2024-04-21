@@ -50,7 +50,7 @@
 			"type": "vmess",
 			"tag": "vmess-reality-out",
 			"server": "ebsz.ddns.net",
-			"server_port": 443,
+			"server_port": 80,
 			"uuid": "fuckfirewallsingeneral",
 			"security": "chacha20-poly1305",
 			"alter_id": 0,
