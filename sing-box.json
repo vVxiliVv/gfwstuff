@@ -52,7 +52,7 @@
 			"server": "ebsz.ddns.net",
 			"server_port": 443,
 			"uuid": "fuckfirewallsingeneral",
-			"security": "zero",
+			"security": "chacha20-poly1305",
 			"alter_id": 0,
 			"global_padding": false,
 			"authenticated_length": true,
