@@ -63,7 +63,7 @@
 					"enabled": true,
 					"fingerprint": "firefox"
 				},
-				"server_name": "www.speedtest.net",
+				"server_name": "",
 				"alpn": ["h2"],
 				"reality": {
 					"enabled": true,
@@ -72,7 +72,7 @@
 				}
 			},
 			"transport": {
-				"type": "ws"
+				"type": "h2"
 			}
 		},
 		{
