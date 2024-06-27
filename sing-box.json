@@ -71,9 +71,11 @@
 					"short_id": "b1"
 				}
 			},
-			"transport": {
-				"type": "ws"
-			}
+		"transport": {
+			"type": "http",
+			"host": ["www.speedtest.net"],
+			"idle_timeout": "15s",
+			"ping_timeout": "15s"
 		},
 		{
 			"type": "urltest",
