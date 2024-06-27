@@ -1,6 +1,6 @@
 {
 	"log": {
-		"disabled": true
+		"disabled": false
 	},
 	"dns": {
 		"servers": [
@@ -50,15 +50,29 @@
 			"type": "vmess",
 			"tag": "vmess-reality-out",
 			"server": "ebsz.ddns.net",
-			"server_port": 80,
+			"server_port": 443,
 			"uuid": "fuckfirewallsingeneral",
-			"security": "chacha20-poly1305",
+			"security": "zero",
 			"alter_id": 0,
 			"global_padding": false,
 			"authenticated_length": true,
 			"domain_strategy": "ipv4_only",
+			"tls": {
+				"enabled": true,
+				"utls": {
+					"enabled": true,
+					"fingerprint": "firefox"
+				},
+				"server_name": "www.speedtest.net",
+				"alpn": ["h2"],
+				"reality": {
+					"enabled": true,
+					"public_key": "ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY",
+					"short_id": "b1"
+				}
+			},
 			"transport": {
-				"type": "httpupgrade"
+				"type": "ws"
 			}
 		},
 		{
