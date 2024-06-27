@@ -1,0 +1,34 @@
+{
+            "inbounds": [
+                {
+                    "port": 10808,
+                    "protocol": "socks",
+                    "settings": { "auth": "noauth", "udp": true }
+                }
+            ],
+            "outbounds": [
+                {
+                    "protocol": "vless",
+                    "settings": {
+                        "vnext": [
+                            {
+                                "address": "87.229.115.24",
+                                "port": 10002,
+                                "users": [
+                                    {
+                                        "id": "root",
+                                        "encryption": "none",
+                                        "flow": "xtls-rprx-vision"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "streamSettings": {
+                        "network": "tcp",
+                        "security": "tls",
+                        "tlsSettings": { "serverName": "yettel.hu", "allowInsecure": true }
+                    }
+                }
+            ]
+        }
