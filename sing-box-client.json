@@ -53,7 +53,6 @@
       "server_port": 443,
       "uuid": "fuckfirewallsingeneral",
       "flow": "xtls-rprx-vision",
-      "global_padding": false,
       "authenticated_length": true,
       "domain_strategy": "ipv4_only",
       "tls": {
@@ -78,7 +77,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "vmess-reality-out"
+        "vless-reality-out"
       ],
       "interval": "15s",
       "tolerance": 1000,
