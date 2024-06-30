@@ -52,7 +52,6 @@
       "server": "ebsz.ddns.net",
       "server_port": 443,
       "uuid": "fuckfirewallsingeneral",
-      "security": "zero",
       "flow": "xtls-rprx-vision",
       "global_padding": false,
       "authenticated_length": true,
