@@ -1,13 +1,17 @@
 {
 	"log": {
-		"disabled": true
+		"disabled": false
 	},
-	"route": {
+		"route": {
 		"rules": [
 			{
 				"port": [80, 443, 8080],
 				"outbound": "block",
 				"network": "udp"
+			},
+			{
+				"ip_cidr": ["192.168.1.0/24"],
+				"outbound": "block"
 			}
 		]
 	},
