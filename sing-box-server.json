@@ -2,7 +2,7 @@
 	"log": {
 		"disabled": false
 	},
-		"route": {
+	"route": {
 		"rules": [
 			{
 				"port": [80, 443, 8080],
