@@ -5,10 +5,10 @@
   "dns": {
     "servers": [
       {
-        "address": "udp://1.1.1.1",
+        "address": "tcp://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
-        "detour": "vless-reality-out"
+        "detour": "auto"
       },
       {
         "tag": "bypass-dns",
