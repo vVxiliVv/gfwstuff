@@ -32,7 +32,7 @@
       "interface_name": "tun0",
       "inet4_address": ["172.18.0.1/30"],
       "inet6_address": ["fdfe:dcba:9876::1/126"],
-      "stack": "gvisor",
+      "stack": "system",
       "mtu": 1500,
       "auto_route": true,
       "strict_route": true,
