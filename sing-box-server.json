@@ -5,21 +5,12 @@
 	"route": {
 		"rules": [
 			{
-				"port": [80, 443, 8080],
-				"outbound": "block",
-				"network": "udp"
-			},
-			{
 				"ip_cidr": ["192.168.1.0/24"],
 				"outbound": "block"
-			}
-		]
-	},
-	"dns": {
-		"servers": [
-			{
-				"address": "tcp://1.1.1.1",
-				"detour": "dns-out"
+			},
+						{
+				"ip_cidr": ["192.168.2.0/24"],
+				"outbound": "block"
 			}
 		]
 	},
@@ -58,6 +49,27 @@
 			"transport": {
 				"type": "ws"
 			}
+		},
+				{
+			"multiplex": {
+				"enabled": true
+			},
+			"type": "vless",
+			"tag": "vless-httpupgrade-in",
+			"listen": "0.0.0.0",
+			"listen_port": 8080,
+			"sniff": false,
+			"sniff_override_destination": false,
+			"domain_strategy": "prefer_ipv6",
+			"users": [
+				{
+					"name": "root",
+					"uuid": "root"
+				}
+			],
+			"transport": {
+				"type": "httpupgrade"
+			}
 		}
 	],
 	"outbounds": [
@@ -67,10 +79,6 @@
 		{
 			"type": "block",
 			"tag": "block"
-		},
-		{
-			"type": "direct",
-			"tag": "dns-out"
 		}
 	]
 }
