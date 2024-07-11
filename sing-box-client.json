@@ -8,7 +8,7 @@
         "address": "tls://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
-        "detour": "auto"
+        "detour": "vless-reality-out"
       },
       {
         "tag": "bypass-dns",
@@ -20,7 +20,7 @@
     ],
     "rules": [
       {
-        "domain": ["ebsz.ddns.net"],
+        "domain": ["direct.speedtest.tvpg.hu"],
         "server": "bypass-dns"
       }
     ]
@@ -44,12 +44,11 @@
     {
       "multiplex": {
         "enabled": true,
-        "min_streams": 1024,
-        "max_connections": 1024
+        "max_streams": 1024
       },
       "type": "vless",
       "tag": "vless-reality-out",
-      "server": "ebsz.ddns.net",
+      "server": "direct.speedtest.tvpg.hu",
       "server_port": 443,
       "uuid": "fuckfirewallsingeneral",
       "domain_strategy": "prefer_ipv6",
@@ -72,17 +71,6 @@
      }
     },
     {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [
-        "vless-reality-out"
-      ],
-      "interval": "15s",
-      "tolerance": 1000,
-      "idle_timeout": "15s",
-      "interrupt_exist_connections": true
-    },
-    {
       "type": "direct",
       "tag": "dns-bypass"
     },
@@ -98,7 +86,7 @@
         "outbound": "dns-out"
       }
     ],
-    "final": "auto",
+    "final": "vless-reality-out",
     "auto_detect_interface": true
   }
 }
