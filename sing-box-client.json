@@ -29,7 +29,7 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "tun0",
+      "interface_name": "VPN",
       "inet4_address": ["172.18.0.1/30"],
       "inet6_address": ["fdfe:dcba:9876::1/126"],
       "stack": "system",
