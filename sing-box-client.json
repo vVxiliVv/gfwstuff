@@ -33,7 +33,7 @@
       "inet4_address": ["172.18.0.1/30"],
       "inet6_address": ["fdfe:dcba:9876::1/126"],
       "stack": "system",
-      "mtu": 1500,
+      "mtu": 576,
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
@@ -42,16 +42,13 @@
   ],
   "outbounds": [
     {
-      "multiplex": {
-        "enabled": true,
-        "max_streams": 1024
-      },
       "type": "vless",
       "tag": "vless-httpupgrade-out",
       "server": "direct.speedtest.tvpg.hu",
       "server_port": 8080,
       "uuid": "root",
       "domain_strategy": "prefer_ipv6",
+      "tcp_fast_open": true,
       "transport": {
         "type": "httpupgrade"
      }
