@@ -50,7 +50,8 @@
       "domain_strategy": "prefer_ipv6",
       "tcp_fast_open": true,
       "transport": {
-        "type": "httpupgrade"
+        "type": "httpupgrade",
+        "host": "www.speedtest.net"
      }
     },
     {
