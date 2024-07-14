@@ -8,7 +8,7 @@
         "address": "tls://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
-        "detour": "vless-reality-out"
+        "detour": "vless-httpupgrade-out"
       },
       {
         "tag": "bypass-dns",
@@ -47,27 +47,13 @@
         "max_streams": 1024
       },
       "type": "vless",
-      "tag": "vless-reality-out",
+      "tag": "vless-httpupgrade-out",
       "server": "direct.speedtest.tvpg.hu",
-      "server_port": 443,
-      "uuid": "fuckfirewallsingeneral",
+      "server_port": 8080,
+      "uuid": "root",
       "domain_strategy": "prefer_ipv6",
-      "tls": {
-        "enabled": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "server_name": "www.speedtest.net",
-        "alpn": ["h2"],
-        "reality": {
-          "enabled": true,
-          "public_key": "ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY",
-          "short_id": "b1"
-        }
-      },
       "transport": {
-        "type": "ws"
+        "type": "httpupgrade"
      }
     },
     {
@@ -86,7 +72,7 @@
         "outbound": "dns-out"
       }
     ],
-    "final": "vless-reality-out",
+    "final": "vless-httpupgrade-out",
     "auto_detect_interface": true
   }
 }
