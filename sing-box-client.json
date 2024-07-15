@@ -12,7 +12,7 @@
       },
       {
         "tag": "bypass-dns",
-        "address": "tls://95.138.193.252:32043",
+        "address": "tcp://95.138.193.252:32043",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
         "detour": "dns-bypass"
