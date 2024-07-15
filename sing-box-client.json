@@ -5,14 +5,14 @@
   "dns": {
     "servers": [
       {
-        "address": "tls://1.1.1.1",
+        "address": "udp://84.2.44.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
         "detour": "vless-reality-out"
       },
       {
         "tag": "bypass-dns",
-        "address": "tcp://95.138.193.252:32043",
+        "address": "tls://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
         "detour": "dns-bypass"
