@@ -8,7 +8,7 @@
         "address": "tls://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
-        "detour": "vless-httpupgrade-out"
+        "detour": "vless-reality-out"
       },
       {
         "tag": "bypass-dns",
@@ -29,7 +29,7 @@
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "VPN",
+      "interface_name": "tun0",
       "inet4_address": ["172.18.0.1/30"],
       "inet6_address": ["fdfe:dcba:9876::1/126"],
       "stack": "system",
@@ -47,15 +47,28 @@
         "max_streams": 1024
       },
       "type": "vless",
-      "tag": "vless-httpupgrade-out",
+      "tag": "vless-reality-out",
       "server": "direct.speedtest.tvpg.hu",
-      "server_port": 8080,
-      "uuid": "root",
+      "server_port": 443,
+      "uuid": "fuckfirewallsingeneral",
       "domain_strategy": "prefer_ipv6",
       "tcp_fast_open": true,
+      "tls": {
+        "enabled": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "server_name": "www.speedtest.net",
+        "alpn": ["h2"],
+        "reality": {
+          "enabled": true,
+          "public_key": "ioE61VC3V30U7IdRmQ3bjhOq2ij9tPhVIgAD4JZ4YRY",
+          "short_id": "b1"
+        }
+      },
       "transport": {
-        "type": "httpupgrade",
-        "host": "www.speedtest.net"
+        "type": "ws"
      }
     },
     {
@@ -74,7 +87,7 @@
         "outbound": "dns-out"
       }
     ],
-    "final": "vless-httpupgrade-out",
+    "final": "vless-reality-out",
     "auto_detect_interface": true
   }
 }
