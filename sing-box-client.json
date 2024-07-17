@@ -41,6 +41,10 @@
   ],
   "outbounds": [
     {
+      "multiplex": {
+        "enabled": true,
+        "max_streams": 1024
+      },
       "type": "vless",
       "tag": "vless-httpupgrade-out",
       "server": "direct.speedtest.tvpg.hu",
