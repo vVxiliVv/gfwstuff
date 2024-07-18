@@ -27,6 +27,10 @@
   },
   "inbounds": [
     {
+      "multiplex": {
+        "enabled": true,
+        "max_streams": 1024
+      },
       "type": "tun",
       "tag": "tun-in",
       "interface_name": "VPN",
