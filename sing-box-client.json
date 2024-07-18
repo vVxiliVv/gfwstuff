@@ -36,7 +36,7 @@
       "interface_name": "VPN",
       "inet4_address": ["172.18.0.1/30"],
       "inet6_address": ["fdfe:dcba:9876::1/126"],
-      "stack": "gvisor",
+      "stack": "system",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
