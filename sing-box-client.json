@@ -5,7 +5,7 @@
   "dns": {
     "servers": [
       {
-        "address": "udp://84.2.44.1",
+        "address": "tcp://1.1.1.1",
         "address_strategy": "prefer_ipv6",
         "strategy": "prefer_ipv6",
         "detour": "vless-httpupgrade-out"
