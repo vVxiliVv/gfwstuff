@@ -6,8 +6,8 @@
     "servers": [
       {
         "address": "tcp://1.1.1.1",
-        "address_strategy": "prefer_ipv6",
-        "strategy": "prefer_ipv6",
+        "address_strategy": "ipv4_only",
+        "strategy": "ipv4_only",
         "detour": "vless-httpupgrade-out"
       },
       {
@@ -31,7 +31,6 @@
       "tag": "tun-in",
       "interface_name": "VPN",
       "inet4_address": ["172.18.0.1/30"],
-      "inet6_address": ["fdfe:dcba:9876::1/126"],
       "stack": "system",
       "auto_route": true,
       "strict_route": true,
@@ -51,7 +50,7 @@
       "server_port": 8080,
       "uuid": "root",
       "packet_encoding": "xudp",
-      "domain_strategy": "prefer_ipv6",
+      "domain_strategy": "ipv4_only",
       "transport": {
         "type": "httpupgrade"
      }
