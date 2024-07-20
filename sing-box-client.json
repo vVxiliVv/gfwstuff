@@ -50,6 +50,7 @@
       "server_port": 8080,
       "uuid": "root",
       "packet_encoding": "xudp",
+      "tcp_fast_open": true,
       "domain_strategy": "ipv4_only",
       "transport": {
         "type": "httpupgrade"
