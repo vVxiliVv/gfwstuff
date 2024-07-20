@@ -103,7 +103,7 @@
       {
         "type": "field",
         "ip": ["1.1.1.1"],
-        "network": "tcp",
+        "network": "udp",
         "port": 53,
         "outboundTag": "proxy"
       },
