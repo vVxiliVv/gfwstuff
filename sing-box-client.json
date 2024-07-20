@@ -53,7 +53,8 @@
       "tcp_fast_open": true,
       "domain_strategy": "ipv4_only",
       "transport": {
-        "type": "httpupgrade"
+        "type": "httpupgrade",
+        "host": "direct.speedtest.tvpg.hu"
      }
     },
     {
