@@ -67,7 +67,10 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade"
+        "network": "httpupgrade",
+        "httpupgradeSettings": {
+          "host": "www.speedtest.net"
+        }
       },
       "tag": "proxy"
     },
