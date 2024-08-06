@@ -3,16 +3,9 @@
   "log": {
     "loglevel": "none"
   },
-  "policy": {
-    "levels": {
-      "0": {
-        "connIdle": 30
-      }
-    }
-  },
   "dns": {
     "servers": [
-      "1.1.1.1",
+      "1.0.0.1",
       {
         "address": "5.5.5.5",
         "domains": ["direct.speedtest.tvpg.hu"]
