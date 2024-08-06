@@ -5,7 +5,7 @@
   "dns": {
     "servers": [
       {
-        "address": "udp://1.1.1.1",
+        "address": "udp://1.0.0.1",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
         "detour": "vless-httpupgrade-out"
