@@ -71,7 +71,7 @@
     {
       "protocol": "dns",
       "settings": {
-        "address": "95.138.193.252",
+        "address": "87.229.84.80",
         "port": 32015,
         "network": "tcp"
       },
