@@ -12,7 +12,7 @@
       },
       {
         "tag": "bypass-dns",
-        "address": "tcp://95.138.193.252:32015",
+        "address": "tcp://87.229.84.80:32015",
         "address_strategy": "ipv4_only",
         "strategy": "ipv4_only",
         "detour": "dns-direct"
