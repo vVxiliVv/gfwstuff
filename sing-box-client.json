@@ -41,7 +41,7 @@
   "outbounds": [
     {
       "multiplex": {
-        "enabled": false,
+        "enabled": true,
         "max_streams": 1024
       },
       "type": "vless",
