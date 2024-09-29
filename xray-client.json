@@ -38,6 +38,13 @@
   ],
   "outbounds": [
     {
+      "mux": {
+        "concurrency": 1024,
+        "enabled": true,
+        "xudpConcurrency": 1024,
+        "xudpProxyUDP443": "reject"
+      },
+    {
       "protocol": "vless",
       "settings": {
         "vnext": [
