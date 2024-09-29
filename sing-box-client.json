@@ -48,7 +48,7 @@
       "tag": "vless-httpupgrade-out",
       "server": "direct.speedtest.tvpg.hu",
       "server_port": 8080,
-      "uuid": "root",
+      "uuid": "freeinternetforall",
       "packet_encoding": "xudp",
       "domain_strategy": "ipv4_only",
       "transport": {
