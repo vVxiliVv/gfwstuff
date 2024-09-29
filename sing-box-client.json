@@ -40,11 +40,15 @@
   ],
   "outbounds": [
     {
+      "multiplex": {
+        "enabled": true,
+        "max_streams": 1024
+      },
       "type": "vless",
       "tag": "vless-httpupgrade-out",
       "server": "direct.speedtest.tvpg.hu",
       "server_port": 8080,
-      "uuid": "freeinternetforall",
+      "uuid": "root",
       "packet_encoding": "xudp",
       "domain_strategy": "ipv4_only",
       "transport": {
